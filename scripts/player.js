@@ -31,10 +31,12 @@ class Player {
       this.soundObject.play();
       this.playState = 'playing';
       this.currentlyPlaying.element.removeClass('paused').addClass('playing');
+
     } else {
       this.soundObject.pause();
       this.playState = 'paused';
       this.currentlyPlaying.element.removeClass('playing').addClass('paused');
+      $('#time-control .total-time').text(player.getDuration);
     }
   }
 
