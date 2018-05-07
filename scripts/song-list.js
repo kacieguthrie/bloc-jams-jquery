@@ -11,7 +11,7 @@
           </button>
         </td>
         <td>${song.title}</td>
-        player.prettyTime(<td>${song.duration}</td>)
+        <td>${song.duration}</td>
        </tr>
     `);
 
